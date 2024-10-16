@@ -158,19 +158,20 @@
     justify-content: center;
     align-items: center;
     padding: 80px 0 0 0;
+    gap: 200px;
 }
 
-.container-products {
+.products {
     width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: rgb(7, 73, 122);
-    gap: 40px;
+    gap: 80px;
 }
 
-.container-products-title {
+.products-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,19 +179,19 @@
     gap: 10px;
 }
 
-.container-products-title-upper {
+.products-title-upper {
     font-size: 2rem;
     font-weight: 800;
 }
 
-.container-products-flex {
+.products-flex {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
 
-.container-products-flex-oneProduct {
+.products-flex-oneProduct {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,17 +199,177 @@
     gap: 20px;
     width: 23%;
 }
-.container-products-flex-oneProduct-image {
+.products-flex-oneProduct-image {
     width: 100%;
     height: 300px;
     background-color: rgb(7, 73, 122);
 }
 
-.container-products-allBtn {
+.products-allBtn {
     padding: 15px 35px;
     font-weight: 600;
     background-color: rgb(228, 184, 9);
     color: rgb(7, 73, 122);
     border: none;
     cursor: pointer;
+}
+
+.productBanner {
+    width: 100%;
+    height: 400px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 80px;
+}
+
+.productBanner-img {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(7, 73, 122);
+}
+
+.productBanner-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 400px;
+    color: rgb(7, 73, 122);
+}
+
+.productBanner-information-offer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: start;
+}
+.productBanner-information-offer-title {
+    padding: 15px 100px 15px 30px;
+    color: white;
+    background-color: rgb(7, 73, 122);
+    font-size: 1rem;
+}
+.productBanner-information-offer-price {
+    padding: 10px 15px;
+    background-color: rgb(228, 184, 9);
+    color: rgb(7, 73, 122);
+    position: relative;
+    top: -70px;
+    left: 300px;
+    rotate: 10deg;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.productBanner-information-title {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.productBanner-information-desc {
+    line-height: 30px;
+    margin: 30px 0 50px;
+}
+
+.productBanner-information-readmoreBtn {
+    background-color: rgb(228, 184, 9);
+    color: rgb(7, 73, 122);
+    border: none;
+    padding: 20px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.brands {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(7, 73, 122);
+    gap: 80px;
+}
+
+.brands-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.brands-title-upper {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.brands-grid {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands-grid-oneBrand {
+    border: rgb(228, 228, 228) 1px solid;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 40px 0;
+    cursor: pointer;
+    transition: .2s all;
+}
+.brands-grid-oneBrand:hover {
+    border: 3px solid rgb(7, 73, 122);
+}
+
+.brands-allBtn {
+    padding: 15px 35px;
+    font-weight: 600;
+    background-color: rgb(228, 184, 9);
+    color: rgb(7, 73, 122);
+    border: none;
+    cursor: pointer;
+}
+
+.categories {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.categories-oneCategory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(7, 73, 122);
+}
+
+.categories-oneCategory-image {
+    width: 200px;
+    height: 120px;
+    background-color: rgb(7, 73, 122);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+.categories-oneCategory-title {
+    width: 200px;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: white;
+}
+
+.footer {
+    width: 100%;
+    height: 500px;
+    margin-top: -20px;
+    background-color: rgb(238, 238, 238);
 }
