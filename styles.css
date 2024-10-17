@@ -85,36 +85,178 @@
 
 .header-posters {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 300px 200px 200px;
-    justify-content: center;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 400px 200px 200px;
+    justify-items: center;
+    align-items: center;
     gap: 10px;
     width: 70%;
 }
 
-.header-posters div {
-    background-color: rgb(7, 73, 122);
+.header-poster, .header-carousel {
+    background-color: rgb(228, 228, 228);
     height: 100%;
     width: 100%;
+    transition: all .3s;
 }
 
 .header-posters-carousel {
     grid-column: 1/3;
-    grid-row: 0/1;
+    grid-row: 1/2;
+}
+.header-carousel1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-carousel1-image {
+    background-image: url('https://xtratheme.com/elementor/big-shop/wp-content/uploads/sites/113/2024/03/slide-001-1.jpg');
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+.header-carousel1-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 400px;
+    padding: 0 50px;
+    color: rgb(7, 73, 122);
+}
+.header-carousel1-information-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.header-carousel1-information-desc {
+    color: rgb(116, 116, 116);
+    margin: 30px 0 50px 0;
+}
+.header-carousel1-information-viewBtn {
+    background-color: rgb(228, 184, 9);
+    color: rgb(7, 73, 122);
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: 700;
 }
 .header-posters-posterOne {
     grid-column: 1/2;
     grid-row: 2/4;
+    background-image: url('https://xtratheme.com/big-shop/wp-content/uploads/sites/147/2024/03/vision-pro-transparent.png');
+    background-position:right bottom;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    display: flex;
+    align-items: center;
+}
+.header-posters-posterOne-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 30%;
+    color: rgb(7, 73, 122);
+    padding-left: 40px;
+}
+
+.header-posters-posterOne-information-title1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+.header-posters-posterOne-information-title2 {
+    font-size: 1.8rem;
+    margin-top: -10px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgb(176, 176, 176);
+}
+.header-posters-posterOne-information-desc {
+    padding: 40px 0;
+    color: rgb(116, 116, 116);
+}
+.header-posters-posterOne-information-viewAllBtn {
+    border: none;
+    background-color: rgb(228, 228, 228);
+    color: rgb(7, 73, 122);
 }
 
 .header-posters-posterTwo {
     grid-column: 2/3;
     grid-row: 2/3;
+    background-image: url('https://xtratheme.com/big-shop/wp-content/uploads/sites/147/2024/03/laptop.png');
+    background-position:right bottom;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    display: flex;
+    align-items: center;
+}
+.header-posters-posterTwo-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 40%;
+    color: rgb(7, 73, 122);
+    padding-left: 40px;
+}
+
+.header-posters-posterTwo-information-title1 {
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+.header-posters-posterTwo-information-desc {
+    padding: 20px 0 30px 0;
+    color: rgb(116, 116, 116);
+}
+.header-posters-posterTwo-information-viewAllBtn {
+    border: none;
+    background-color: rgb(228, 228, 228);
+    color: rgb(7, 73, 122);
 }
 
 .header-posters-posterThree {
     grid-column: 2/3;
     grid-row: 3/4;
+    background-image: url('https://xtratheme.com/big-shop/wp-content/uploads/sites/147/2024/03/iphone.png');
+    background-position:right bottom;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.header-posters-posterThree-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 40%;
+    color: rgb(7, 73, 122);
+    padding-left: 40px;
+}
+
+.header-posters-posterThree-information-title1 {
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+.header-posters-posterThree-information-desc {
+    padding: 20px 0 30px 0;
+    color: rgb(116, 116, 116);
+}
+.header-posters-posterThree-information-viewAllBtn {
+    border: none;
+    background-color: rgb(228, 228, 228);
+    color: rgb(7, 73, 122);
+}
+.header-posters-posterOne:hover, .header-posters-posterTwo:hover, .header-posters-posterThree:hover
+ {
+    width: 103%;
+    height: 103%;
+    cursor: pointer;
 }
 
 .header-collections {
