@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+
+a {
+    text-decoration: none;
+}
+
 .nav {
     background-color: rgb(7, 73, 122);
     color: white;
@@ -72,6 +77,9 @@
 .nav-lower-selected {
     color: rgb(7, 73, 122);
     background-color: white;
+}
+.nav-lower-selected a {
+    color: rgb(7, 73, 122);
 }
 
 .header {
